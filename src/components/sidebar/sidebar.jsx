@@ -20,7 +20,7 @@ const SideBar = () => {
         <button className="btn green-btn">+ New Campaign</button>
 
         <div className="links">
-          <NavLink to="/" className="nav-links">
+          <NavLink to="/React-Task/" className="nav-links">
             <img src={logo1} alt="" /> Overview
           </NavLink>
           <NavLink to="Campaign" className="nav-links">
