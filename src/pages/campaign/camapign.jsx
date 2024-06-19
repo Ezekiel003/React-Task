@@ -16,9 +16,10 @@ const Campaign = () => {
       .then((data) => {
         setData(data);
         setNum(data.length)
+        setLoading(true)
       });
   }, []);
-
+const [loading ,setLoading]  useState(false)
   return (
     <div className="container">
       <div className="content">
@@ -51,7 +52,7 @@ const Campaign = () => {
         </div>
 
         <div className="data-items">
-          {data ? (
+          {loading ? (
             data.map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
