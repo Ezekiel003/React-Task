@@ -19,7 +19,7 @@ const Campaign = () => {
         setLoading(true)
       });
   }, []);
-const [loading ,setLoading]  useState(false)
+const [loading ,setLoading]=  useState(false)
   return (
     <div className="container">
       <div className="content">
@@ -52,7 +52,7 @@ const [loading ,setLoading]  useState(false)
         </div>
 
         <div className="data-items">
-          {loading ? (
+          {loading== true ? (
             data.map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
