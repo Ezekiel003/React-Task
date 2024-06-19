@@ -3,6 +3,7 @@ import "./sidebar.css";
 import logo from "/arcticons_google-messages.svg";
 import logo2 from "/Scrutz.svg";
 import { TbBulb } from "react-icons/tb";
+import logo1 from"../../../public/ri_dashboard-2-line.svg"
 const SideBar = () => {
   return (
     <div className="sidebar">
@@ -16,7 +17,7 @@ const SideBar = () => {
 
         <div className="links">
           <NavLink to="/" className="nav-links">
-            <img src="/ri_dashboard-2-line.svg" alt="" /> Overview
+            <img src={logo1} alt="" /> Overview
           </NavLink>
           <NavLink to="Campaign" className="nav-links">
             <img src="/material-symbols_campaign-outline.svg" alt="" />Campaign
