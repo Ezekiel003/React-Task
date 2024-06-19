@@ -3,7 +3,7 @@ import "./sidebar.css";
 import logo from "/arcticons_google-messages.svg";
 import logo2 from "/Scrutz.svg";
 import { TbBulb } from "react-icons/tb";
-import logo1 from"../../../public/ri_dashboard-2-line.svg"
+import logo1 from"/ri_dashboard-2-line.svg"
 const SideBar = () => {
   return (
     <div className="sidebar">
