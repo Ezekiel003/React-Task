@@ -1,5 +1,5 @@
 import { BiArrowBack } from "react-icons/bi";
-import "./edit.css"
+import "./Edit.css"
 import { Link, useParams } from "react-router-dom";
 import { useEffect,useState } from "react";
 import { HiXMark } from "react-icons/hi2";
