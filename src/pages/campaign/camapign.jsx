@@ -55,7 +55,7 @@ const [loading ,setLoading]=  useState(false)
 
         <div className="data-items">
           {loading== true ? (
-            data.slice(0,10).map((campaign,index) => {
+            data.splice(0,10).map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
           ) : (
