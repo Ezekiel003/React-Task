@@ -4,6 +4,7 @@ import hero from "/empty-RBIL0twm1B.svg"
 import "./overView.css"
 
 
+
 const OverView = () => {
     return ( 
         <div className="container">
@@ -28,6 +29,7 @@ const OverView = () => {
                 <img src={hero} className="hero-img" alt="" />
                 <p>No activity yet, create a new campaign to get started</p>
                 <button className="btn green-btn">+ New Campaign</button>
+            
             </div>
         </div>
      );

@@ -55,7 +55,7 @@ const [loading ,setLoading]=  useState(false)
 
         <div className="data-items">
           {loading== true ? (
-            data.map((campaign,index) => {
+            data.slice(0,10).map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
           ) : (
@@ -66,7 +66,7 @@ const [loading ,setLoading]=  useState(false)
               <Stack spacing={2}>
                 <Pagination count={10} color="primary" />
               </Stack>
-            <p style={{fontWeight:500}}>Showing {num} of 40 results</p>
+            <p style={{fontWeight:500}}>Showing {num >10?"10":num} of {num} results</p>
           </div>
       </div>
     </div>
