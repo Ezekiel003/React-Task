@@ -2,8 +2,6 @@ import { BiArrowBack } from "react-icons/bi";
 import "./edit.css"
 import { Link, useParams } from "react-router-dom";
 import { useEffect,useState } from "react";
-import { FcCancel } from "react-icons/fc";
-import { TiCancel } from "react-icons/ti";
 import { HiXMark } from "react-icons/hi2";
 const Edit = () => {
     const {id} = useParams()
