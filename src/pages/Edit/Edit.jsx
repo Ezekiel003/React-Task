@@ -18,7 +18,7 @@ const Edit = () => {
              setData(data)
              setKeywords(data.linkedKeywords)
          })
-    },[id])
+    },[id]) 
     const navigate = useNavigate()
     const handleDelete = (id)=>{
         fetch("https://infinion-test-int-test.azurewebsites.net/api/Campaign/"+id,{
